@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <title>&#9729; Vape Is Life &#9729;</title>
+    <link rel="icon" href="logo2.png" type="image/png"/>		
+	<link href="StyleSheet.css" rel="stylesheet" type="text/css"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+     
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="header">
+        <h1><img src="logo.png" align="center" width="150" height="150"/> &#9729; Vape.is.Life &#9729; </h1>
+        </div>
+
+        <div class="navigation">
+							<ul id="nav">
+                                <nav>
+                                <li><a href ="Default.aspx">&spades; Home &spades;</a></li>
+                                <li><a href ="Juices.aspx">&spades; Juices &spades;</a></li>
+                                <li><a href ="Accessories.aspx">&spades; Accessories &spades;</a></li>
+                                <li><a href ="Mod_and_tank.aspx">&spades; Mod and Tank &spades;</a></li>
+                                <li><a href ="Contact.aspx">&spades; Contact &spades;</a></li>
+                                </nav>
+                            </ul>
+			</div>
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</form>
+</body>
+<footer class="footer">
+        <p> Copyright &copy; 2017. All Rights Reserved. Vape.is.Life&trade; </p>
+</footer>
+</html>
