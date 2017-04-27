@@ -17,7 +17,7 @@ public partial class Contact : System.Web.UI.Page
         SmtpClient client = new SmtpClient();
         //configure the smtp client to it knows how to connect to the mail server
         client.Host = "smtp.gmail.com";
-        client.Port = 25;
+        client.Port = 587;
         client.EnableSsl = true;
 
         //this particular email server requires us to login so

@@ -24,10 +24,7 @@
 
 			});
 	</script>
-		
-			
-			
-				<ul class="rslides" id="slider1">
+	    		<ul class="rslides" id="slider1">
 					<li><img src="battery.jpg" alt="Battery"></li>
 					<li><img src="coil.jpg" alt="Coil"></li> 
 					<li><img src="cotton.jpg" alt="Cotton"></li> 
@@ -36,7 +33,7 @@
 					<li><img src="tank.jpg" alt="Tanks"></li> 
                     <li><img src="toolkit.jpg" alt="Toolkit"></li> 
 				</ul>
-		
+					
 
     <div class="intro">
         <h2>&#9729; Why Choose Us? &#9729;</h2>
