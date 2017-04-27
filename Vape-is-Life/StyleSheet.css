@@ -43,7 +43,6 @@ font-size: 20px;
 padding: 10px;
 height: 20px;
 width: 1000px;
-z-index:100px;
 text-align:center;
 margin:auto;
 margin-top:10px;
@@ -72,7 +71,7 @@ opacity: 0.7;
 border-radius:10px;
 margin:50px 100px 0px 100px;
 border:5px solid black;
-padding:-5px;
+padding:5px;
 width:80%;
 }
 
@@ -88,20 +87,20 @@ margin-left: -550px;
 
 
 .rslides img {
-display: auto;
+display: block;
 top: 10px;
 height: 100%;
-float: center;
-/*width: 100%;*/
+margin-left: 10px;
+position:center;
 }
 
 .rslides {
 list-style: none;
 top: 50px;
-border:2px solid black;
-margin-bottom: 50px;
+left: 250px;
+border: 5px solid black;
+position: center;
 }
-/*End responsive slides*/
 
 .lightbox {
 margin: 10px ;

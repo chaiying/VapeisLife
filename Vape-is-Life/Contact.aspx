@@ -39,7 +39,7 @@
     <asp:Label ID="lblmsg" runat="server"></asp:Label></p>
         </div>
 
-            <asp:Button ID="Send" runat="server" Text="Submit" OnClick = "btnsend" />
+            <p><asp:Button ID="Send" runat="server" Text="Submit" OnClick = "btnsend" /></p>
 
         <div id="map">
             <script src="JavaScript/JavaScript.js"></script>
