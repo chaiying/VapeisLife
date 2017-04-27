@@ -9,8 +9,9 @@ float: right;
 }
 
 .header{
-text-align:center;
-height: 120px;
+align:center;
+height: 150px;
+width: 150px;
 margin: 0px 10px 0 0;
 font-size: 25px;
 }
@@ -126,14 +127,11 @@ color:#000; font-size:20px;
 text-align: center; 
 }
 
-.maps{
-float: right;
-position: relative;
-/*margin-bottom: -5em;*/
-margin-top: -350px;
-margin-right: 50px;
+#map{
+margin: auto;
+width: 800px;
+height: 400px;
 }
-
 
 .footer {
 position: center;
@@ -142,4 +140,13 @@ color:#000; font-size:15px;
 text-align:center;
 margin: 0 auto;
 margin-top: 100px;
+}
+
+.contact-form{
+    text-align: center;
+    display: block;
+}
+
+p{
+    margin: 3px;
 }

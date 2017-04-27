@@ -10,7 +10,6 @@
 	<h1>Contact Us</h1>    
 <p><strong>For all Pre Order items  please email us at </strong><a href="mailto:www.vape.is.life.com"><strong>www.vape.is.life.com</strong></a></p>
 <p><strong>Contact us on +673 000 0000</strong></p>
-<div class="detail"><form action="/contact-us/#wpcf7-f4-p14-o1" method="post" class="wpcf7-form" novalidate="novalidate">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="4">
 <input type="hidden" name="_wpcf7_version" value="3.5.2">
@@ -18,27 +17,38 @@
 <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p14-o1">
 <input type="hidden" name="_wpnonce" value="dedf1d470b">
 </div>
-<p>Your Name (required)<br>
-    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"></span> </p>
-<p>Your Email (required)<br>
-    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true"></span> </p>
-<p>Subject<br>
-    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text"></span> </p>
-<p>Your Comment/Enquiries<br>
-    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"></textarea></span> </p>
-			</div>
+    <div class="contact-form">
+    <p>
+    <asp:Label ID="LName" runat="server" Text="Name" associatedcontrolID="TName"></asp:Label></p>
+    <asp:TextBox ID="TName" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RName" runat="server" ErrorMessage="Name required**" controltovalidate="TName" Text="*"></asp:RequiredFieldValidator>
+    <p>
+    <asp:Label ID="LEmail" runat="server" Text="Email" associatedcontrolID="TEmail"></asp:Label></p>
+    <asp:TextBox ID="TEmail" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="REmail" runat="server" ErrorMessage="Email required**" controltovalidate="TEmail" Text="*"></asp:RequiredFieldValidator><br />
+    <asp:RegularExpressionValidator ID="Email_user" runat="server" ErrorMessage="Please enter a vaild Email address" controltovalidate="TEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+    <p>                                             
+    <asp:Label ID="LSubject" runat="server" Text="Subject" associatedcontrolID="TSubject"></asp:Label></p>
+    <asp:TextBox ID="TSubject" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RSubject" runat="server" ErrorMessage="Subject required**" controltovalidate="TSubject" Text="*"></asp:RequiredFieldValidator>
+    <p>
+    <asp:Label ID="LMessage" runat="server" Text="Message" associatedcontrolID="TMessage"></asp:Label></p>
+    <asp:TextBox ID="TMessage" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RMessage" runat="server" ErrorMessage="Message required**" controltovalidate="TMessage" Text="*"></asp:RequiredFieldValidator>
+    <p>
+    <asp:Label ID="lblmsg" runat="server"></asp:Label></p>
+        </div>
 
-        <div class="maps">
-            <img src="maps.png" alt="Location" style="width:500px;height:250px;" />    
+            <asp:Button ID="Send" runat="server" Text="Submit" OnClick = "btnsend" />
+
+        <div id="map">
+            <script src="JavaScript/JavaScript.js"></script>
+            <script src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyCOS_qbr3Q1NCivWaj2Vp0B6lIBSx4B058&callback=initMap"
+    async defer></script>
+            
          </div>        
 
-            <div align="center">
-				<ul  id="nav">
-					<li>
-						<a href="Thankyou.aspx"><b>Submit</b></a>
-					</li>
-				</ul>
-			</div>
+           
 			</div>
 			</div>
 </asp:Content>

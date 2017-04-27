@@ -17,19 +17,21 @@
     <form id="form1" runat="server">
 
         <div class="header">
-        <h1><img src="logo.png" align="center" width="150" height="150"/> &#9729; Vape.is.Life &#9729; </h1>
+        <h1><img src="logo.png" alt="logo image"/> &#9729; Vape.is.Life &#9729; </h1>
         </div>
 
         <div class="navigation">
-							<ul id="nav">
-                                <nav>
-                                <li><a href ="Default.aspx">&spades; Home &spades;</a></li>
-                                <li><a href ="Juices.aspx">&spades; Juices &spades;</a></li>
-                                <li><a href ="Accessories.aspx">&spades; Accessories &spades;</a></li>
-                                <li><a href ="Mod_and_tank.aspx">&spades; Mod and Tank &spades;</a></li>
-                                <li><a href ="Contact.aspx">&spades; Contact &spades;</a></li>
-                                </nav>
-                            </ul>
+            <table>
+                <tr>
+                	<ul id="nav">
+                        <li><a href ="Default.aspx">&spades; Home &spades;</a></li>
+                        <li><a href ="Juices.aspx">&spades; Juices &spades;</a></li>
+                        <li><a href ="Accessories.aspx">&spades; Accessories &spades;</a></li>
+                        <li><a href ="Mod_and_tank.aspx">&spades; Mod and Tank &spades;</a></li>
+                        <li><a href ="Contact.aspx">&spades; Contact &spades;</a></li>
+                    </ul>
+                </tr>
+            </table>
 			</div>
         
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
@@ -39,5 +41,8 @@
 </body>
 <footer class="footer">
         <p> Copyright &copy; 2017. All Rights Reserved. Vape.is.Life&trade; </p>
+        <a href="http://validator.w3.org/check?uri=referer">HTML Validation</a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS Validation</a>
+        <a href="http://achecker.ca/checker/?uri=referer">WCAG Checking</a>
 </footer>
 </html>
