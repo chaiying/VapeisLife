@@ -9,9 +9,8 @@ float: right;
 }
 
 .header{
-align:center;
+text-align:center;
 height: 150px;
-width: 150px;
 margin: 0px 10px 0 0;
 font-size: 25px;
 }
